@@ -1,0 +1,12 @@
+public boolean updateAllTemps(double tolerance) {
+	double[][] newTemps = new double[temps.length][temps[0].length];
+	for (int row = 0; row < temps.length; row++) {
+		for (int col = 0; col < temps[0].length; col++) {
+			bewTemps[row][col] = computeTemp(row, col);
+			if ((Math.abs(newTemps[row][col] - temps[r][c]) > tolerance) {
+				return false;
+			}
+		}
+	}
+	return true;
+}

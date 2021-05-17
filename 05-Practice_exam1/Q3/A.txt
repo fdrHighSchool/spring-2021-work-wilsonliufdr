@@ -1,0 +1,7 @@
+private double computeTemp (int row, int col) {
+	if (row == 0 || row == row.length - 1 || col == 0 || col == col.length - 1) {
+	return temps[row][col];
+	}
+	double sum = temps[row][col] + temps[row+1][col] + temps[row][col+1] + temps[row -1 ][col] + temps[row][col - 1];
+	return sum / 4.0;
+}

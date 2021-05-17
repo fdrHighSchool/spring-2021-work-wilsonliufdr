@@ -1,0 +1,12 @@
+public static int[][] resize(int [][] array2D) {
+	int rows = numNonZeroRows(array2D);
+	int index = 0;
+	int[][] resizedArr = new int[rows][array2D[0].length];
+	for (int i = 0; i < array2D.length; i++) {
+	if (isNonZeroRow(array2D, i) {
+			resizedArr[index] = array2D[i];
+			index++;
+		}
+	}
+	return resizedArr;	
+}

@@ -1,0 +1,11 @@
+public String findBetterGuess(String guess1, String guess2) {
+	int g1 = scoreGuess(guess1);
+	int g2 = scoreGuess(guess2);
+	if (g1 == g2) {
+	if (g1.compareTo(g2) > 0) {
+		return g1;
+	} else {
+		return g2;
+	}
+	return Math.max(g1, g2);
+}
